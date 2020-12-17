@@ -37,6 +37,15 @@ input[0].oninput=()=>{
   Search_for_template(table,template)
   else Show_all(table)
 }
+input[1].oninput=()=>{
+  let num=input[1].value
+
+  if(num<50) input[1].style.backgroundColor='red'
+  else if(num<70) input[1].style.backgroundColor='yellow'
+  else if(num<85) input[1].style.backgroundColor='#7fff00'
+  else input[1].style.backgroundColor='green'
+
+}
 const condition=document.getElementById('value')
 const search=document.getElementById('search')
 const but_show_all=document.getElementById('showAll')
